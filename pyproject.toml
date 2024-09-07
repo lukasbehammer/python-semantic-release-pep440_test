@@ -6,3 +6,7 @@ version_variables = ["./src/foo/__init__.py:__version__"]
 
 [tool.semantic_release.changelog]
 changelog_file = "CHANGELOG.md"
+
+[tool.semantic_release.branches.main]
+match = "master"
+version_compat = "pep440"
