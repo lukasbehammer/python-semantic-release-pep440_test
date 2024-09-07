@@ -1,0 +1,8 @@
+# Semantic Release
+[tool.semantic_release]
+logging_use_named_masks = true
+allow_zero_version = true
+version_variables = ["./src/foo/__init__.py:__version__"]
+
+[tool.semantic_release.changelog]
+changelog_file = "CHANGELOG.md"
